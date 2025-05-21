@@ -13,6 +13,6 @@ class User(SqlAlchemyBase):
     name = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     sex = sqlalchemy.Column(sqlalchemy.Boolean)
     description = sqlalchemy.Column(sqlalchemy.String, nullable=True)
-    disliked = sqlalchemy.Column(sqlalchemy.String, nullable=True)
+    disliked = sqlalchemy.Column(sqlalchemy.String, default='')
     town = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     url = sqlalchemy.Column(sqlalchemy.String, nullable=True)
