@@ -57,7 +57,7 @@ async def response_sex(update, context):
 
 
 async def response_town(update, context):
-    context.user_data['sex'] = True if update.message.text == 'Женский' else False
+    context.user_data['sex'] = update.message.text
     await update.message.reply_text(
         'Укажите город, для пропуска вопроса напишите "пропустить"')
     return 5

@@ -11,7 +11,7 @@ class User(SqlAlchemyBase):
     chat_id = sqlalchemy.Column(sqlalchemy.Integer)
     username = sqlalchemy.Column(sqlalchemy.String)
     name = sqlalchemy.Column(sqlalchemy.String, nullable=True)
-    sex = sqlalchemy.Column(sqlalchemy.Boolean)
+    sex = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     description = sqlalchemy.Column(sqlalchemy.String, nullable=True)
     disliked = sqlalchemy.Column(sqlalchemy.String, default='')
     town = sqlalchemy.Column(sqlalchemy.String, nullable=True)
